@@ -1,7 +1,7 @@
 // Program sterujący zaworem centralnego ogrzewania  - Sylwester Kilian K.2016.S
 // Biblioteka PID_v1I.h dostosowana do pracy w przerwaniu - ze standardowej biblioteki PID_v1.h
 #include <PID_v1I.h> // zmodyfikowana biblioteka funkcji PID - działająca w przerwaniu
-#include <TimerOne.h> // oryginalna biblioteka funkcji Timera1
+#include <TimerOne.h> // 
 //definicje stałych i zmiennych  ===============================================================================================================================================
 
 // UWAGA!!! wszystkie temperatury podawać pomnożone przez 10
