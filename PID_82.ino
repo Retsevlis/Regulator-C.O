@@ -305,6 +305,7 @@ void PWM()
         Tdo =  200 - map (Tdos / 6000, 0, 1023, -2730, Tod); Tdos = 0; //przeskalowanane do 20 stopni. Uwaga - ujemna dodaje, dodatnia odejmuje
         Tpozad = 200 + Tdo;
         // sprawdzenie czy nie przkroczona graniczna temperatura  w pokoju ...........................................................................................
+       /*
         if (( Tpozad - Tpo ) >= dTpod ) { // jeżeli poniżej zakładanej temp. pokoju o dTpod to grzej o Tkopo -2 stopnie więcej
           Tpopo = Tkopo - 20;
         }
@@ -313,7 +314,8 @@ void PWM()
         }
         if (((5 + Tpozad - Tpo ) <= dTpod ) && ((Tpo - Tpozad + 5 ) <= dTpog )) { // jezeli w granicach to wyłącz korektę
           Tpopo = 0;
-        }
+        } 
+        */
         o = 0;
       }
       n = 0;
